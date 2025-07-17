@@ -6,7 +6,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET', 'POST'])
 def api_root(request, format=None):
-    base_url = 'http://miniature-space-sniffle-q769x47j4qpj34gr9-8000.app.github.dev/'
+    base_url = 'https://miniature-space-sniffle-q769x47j4qpj34gr9-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',
